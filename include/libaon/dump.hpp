@@ -12,7 +12,7 @@ namespace libaon {
  * @param filename The file to dump to
  * @param data The vector containing the values to dump
  */
-template <typename T> void dump(std::vector<T> &data, std::string &filename) {
+template <typename T> void dump(std::vector<T> &data, std::string filename) {
   try {
     std::ofstream file(filename, std::ios::binary);
 
@@ -25,6 +25,9 @@ template <typename T> void dump(std::vector<T> &data, std::string &filename) {
     for (auto &token : data) {
       file << token << std::endl;
     }
+
+    // close
+    file.close();
   } catch (std::exception &e) {
     std::cerr << "Error: " << e.what() << std::endl;
   }
