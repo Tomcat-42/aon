@@ -5,7 +5,7 @@
 
 #include <vector>
 
-namespace libaon {
+namespace aon {
 /**
  * @brief Load a file containing multiple values of type T into a vector.
  * @param filename The file to load
@@ -32,4 +32,4 @@ template <typename T> std::vector<T> load(std::string filename) {
   }
   return data;
 }
-} // namespace libaon
+} // namespace aon

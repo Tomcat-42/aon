@@ -19,22 +19,22 @@ local test_deps = {"gtest", "gmock"}
 add_requires("pybind11", "gtest", "gmock")
 
 -- main C++ library to be used with the Python bindings
-target("libaon")
+target("aon")
 set_kind("static")
 -- set_targetdir(".")
-add_files("src/libaon/*.cpp")
+add_files("src/aon/*.cpp")
 -- set_default(false)
 add_packages(table.unpack(lib_deps))
 
 -- python bindings library
-target("aon")
+target("pyaon")
 set_kind("shared")
 set_prefixname("")
 -- set_targetdir(".")
 add_packages(table.unpack(python_lib_deps))
 -- set_default(true)
-add_files("src/aon/*.cpp")
-add_deps("libaon")
+add_files("src/pyaon/*.cpp")
+add_deps("aon")
 
 -- test target
 target("test")
@@ -43,11 +43,11 @@ add_files("test/**/*.cpp", "test/main.cpp")
 add_ldflags("-lgtest")
 -- set_default(false)
 add_packages(table.unpack(test_deps))
-add_deps("libaon")
+add_deps("aon")
 
 -- standalone
 target("main")
 set_kind("binary")
 -- set_default(false)
 add_files("src/main.cpp")
-add_deps("libaon")
+add_deps("aon")

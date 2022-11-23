@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <libaon/dump.hpp>
+#include <aon/dump.hpp>
 
 #include <string>
 #include <vector>
@@ -43,7 +43,7 @@ protected:
     }};
 
     // dump the data to a file
-    libaon::dump<int>(data, assets_dir + filename);
+    aon::dump<int>(data, assets_dir + filename);
   }
 
   void TearDown() override {

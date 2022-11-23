@@ -1,12 +1,12 @@
 file(GLOB_RECURSE SOURCE CONFIGURE_DEPENDS
   include/**/*.hpp
+  src/pyaon/*.cpp
   src/aon/*.cpp
-  src/libaon/*.cpp
 )
 
-pybind11_add_module(aon
+pybind11_add_module(pyaon
   ${SOURCE}
-  src/aon/aon.cpp
+  src/pyaon/pyaon.cpp
 )
 
-target_include_directories(aon PRIVATE include /usr/include /usr/local/include)
+target_include_directories(pyaon PRIVATE include /usr/include /usr/local/include)

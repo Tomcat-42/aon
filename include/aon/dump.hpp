@@ -6,7 +6,7 @@
 
 #include <vector>
 
-namespace libaon {
+namespace aon {
 /**
  * @brief Dump a vector of values of type T into a file.
  * @param filename The file to dump to
@@ -32,4 +32,4 @@ template <typename T> void dump(std::vector<T> &data, std::string filename) {
     std::cerr << "Error: " << e.what() << std::endl;
   }
 }
-} // namespace libaon
+} // namespace aon
