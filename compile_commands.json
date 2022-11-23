@@ -1,0 +1,21 @@
+[
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-DGTEST_HAS_PTHREAD=1", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/test/linux/x86_64/release/test/dump/dump_tests.cpp.o", "test/dump/dump_tests.cpp"],
+  "file": "test/dump/dump_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-DGTEST_HAS_PTHREAD=1", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/test/linux/x86_64/release/test/load/load_tests.cpp.o", "test/load/load_tests.cpp"],
+  "file": "test/load/load_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-DGTEST_HAS_PTHREAD=1", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/test/linux/x86_64/release/test/main.cpp.o", "test/main.cpp"],
+  "file": "test/main.cpp"
+}]
