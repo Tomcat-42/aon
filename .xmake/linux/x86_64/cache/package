@@ -1,0 +1,81 @@
+{
+    gmock = {
+        defines = "GTEST_HAS_PTHREAD=1",
+        __requirestr = "gmock",
+        linkdirs = "/usr/lib",
+        __enabled = true,
+        links = {
+            "gmock",
+            "gtest"
+        },
+        version = "1.12.1",
+        envs = {
+            LD_LIBRARY_PATH = {
+                "/home/pablo/.xmake/packages/g/gmock/latest/4e0143c97b65425b855ad5fd03038b6a/lib"
+            }
+        }
+    },
+    gtest = {
+        __requirestr = "gtest",
+        linkdirs = "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/lib",
+        __installdir = "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9",
+        libfiles = {
+            "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/lib/libgtest.a",
+            "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/lib/libgtest_main.a",
+            "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/lib/libgmock.a"
+        },
+        envs = {
+            LD_LIBRARY_PATH = {
+                "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/lib"
+            }
+        },
+        __enabled = true,
+        syslinks = "pthread",
+        static = true,
+        links = {
+            "gtest",
+            "gtest_main",
+            "gmock"
+        },
+        version = "1.12.1",
+        sysincludedirs = "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include"
+    },
+    pybind11 = {
+        __requirestr = "pybind11",
+        linkdirs = "/usr/lib",
+        __installdir = "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e",
+        license = "BSD-3-Clause",
+        sysincludedirs = {
+            "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include",
+            "/usr/include/python3.10"
+        },
+        __enabled = true,
+        links = {
+            "python3.10",
+            "ssl",
+            "crypto",
+            "ffi",
+            "z"
+        },
+        version = "v2.10.0",
+        envs = {
+            PATH = {
+                "/home/pablo/.xmake/packages/c/cmake/3.24.2/68b116f83c5c4fb1b93d0f5f7a07021e/bin",
+                "/home/pablo/.xmake/packages/p/python/3.10.6/e357df3d007a461995be04740991afd2/bin",
+                "/home/pablo/.xmake/packages/p/python/3.10.6/e357df3d007a461995be04740991afd2/Scripts"
+            },
+            LD_LIBRARY_PATH = {
+                "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/lib",
+                "/home/pablo/.xmake/packages/c/cmake/3.24.2/68b116f83c5c4fb1b93d0f5f7a07021e/lib",
+                "/home/pablo/.xmake/packages/o/openssl/1.1.1q/0542b0491c164d4dadba757a6e268ba2/lib",
+                "/home/pablo/.xmake/packages/c/ca-certificates/20220604/adc9141f92304bf1b70e40117258b530/lib",
+                "/home/pablo/.xmake/packages/l/libffi/3.4.2/3760478a5e514b6396aaffaa11893feb/lib",
+                "/home/pablo/.xmake/packages/z/zlib/v1.2.12/f77d14620f8f47b2a7615c6bc3246284/lib",
+                "/home/pablo/.xmake/packages/p/python/3.10.6/e357df3d007a461995be04740991afd2/lib"
+            },
+            PYTHONPATH = {
+                "/home/pablo/.xmake/packages/p/python/3.10.6/e357df3d007a461995be04740991afd2/lib/python3.10/site-packages"
+            }
+        }
+    }
+}
