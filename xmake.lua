@@ -22,7 +22,7 @@ add_requires("pybind11", "gtest", "gmock")
 target("libaon")
 set_kind("static")
 -- set_targetdir(".")
-add_files("src/libaon/**/*.cpp")
+add_files("src/libaon/*.cpp")
 -- set_default(false)
 add_packages(table.unpack(lib_deps))
 
@@ -33,7 +33,7 @@ set_prefixname("")
 -- set_targetdir(".")
 add_packages(table.unpack(python_lib_deps))
 -- set_default(true)
-add_files("src/aon/**/*.cpp")
+add_files("src/aon/*.cpp")
 add_deps("libaon")
 
 -- test target

@@ -1,8 +1,18 @@
 [
 {
   "directory": "/mnt/files/projects/Unioeste/paa/libaon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
-  "file": "src/main.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.10", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon/linux/x86_64/release/src/aon/aon.cpp.o", "src/aon/aon.cpp"],
+  "file": "src/aon/aon.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/libaon/linux/x86_64/release/src/libaon/dump.cpp.o", "src/libaon/dump.cpp"],
+  "file": "src/libaon/dump.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/libaon/linux/x86_64/release/src/libaon/load.cpp.o", "src/libaon/load.cpp"],
+  "file": "src/libaon/load.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/libaon",
@@ -18,4 +28,9 @@
   "directory": "/mnt/files/projects/Unioeste/paa/libaon",
   "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-DGTEST_HAS_PTHREAD=1", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/test/linux/x86_64/release/test/main.cpp.o", "test/main.cpp"],
   "file": "test/main.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/libaon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++11", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
 }]

@@ -2,7 +2,6 @@
 #include <libaon/load.hpp>
 #include <stdio.h>
 #include <stdlib.h>
-#
 
 void test_dump_load() {
   std::vector<int> data = {1, 2, 3, 4, 5};
@@ -13,7 +12,7 @@ void test_dump_load() {
   }
 }
 
-int main() { 
+int main() {
   test_dump_load();
   return 0;
 }

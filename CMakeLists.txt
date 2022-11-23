@@ -4,9 +4,9 @@ file(GLOB_RECURSE SOURCE CONFIGURE_DEPENDS
   src/libaon/*.cpp
 )
 
-pybind11_add_module(daa
+pybind11_add_module(aon
   ${SOURCE}
   src/aon/aon.cpp
 )
 
-target_include_directories(daa PRIVATE include /usr/include /usr/local/include)
+target_include_directories(aon PRIVATE include /usr/include /usr/local/include)
