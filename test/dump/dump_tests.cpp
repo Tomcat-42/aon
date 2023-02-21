@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <aon/dump.hpp>
+#include <aon/sorting/dump.hpp>
 
 #include <string>
 #include <vector>
@@ -43,7 +43,7 @@ protected:
     }};
 
     // dump the data to a file
-    aon::dump<int>(data, assets_dir + filename);
+    aon::sorting::dump<int>(data, assets_dir + filename);
   }
 
   void TearDown() override {

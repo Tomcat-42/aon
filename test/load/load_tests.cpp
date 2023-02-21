@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <aon/load.hpp>
+#include <aon/sorting/load.hpp>
 
 #include <string>
 #include <vector>
@@ -31,11 +31,11 @@ protected:
 };
 
 TEST_F(load_tests, load_file_100_unix) {
-  auto loaded_data = aon::load<int>(filename_unix);
+  auto loaded_data = aon::sorting::load<int>(filename_unix);
   ASSERT_EQ(data, loaded_data);
 }
 
 TEST_F(load_tests, load_file_100_dos) {
-  auto loaded_data = aon::load<int>(filename_dos);
+  auto loaded_data = aon::sorting::load<int>(filename_dos);
   ASSERT_EQ(data, loaded_data);
 }

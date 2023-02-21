@@ -1,4 +1,4 @@
-set_languages("c++11")
+set_languages("c++20")
 add_rules("mode.debug", "mode.release")
 set_warnings("all", "error")
 
@@ -9,20 +9,21 @@ add_cxflags("-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden",
             "-fno-trapping-math", "-Ofast")
 
 set_optimize("fastest")
+set_policy("check.auto_ignore_flags", false)
 
 -- set_optimize("agressive")
 
 local lib_deps = {}
 local python_lib_deps = {"pybind11"}
-local test_deps = {"gtest", "gmock"}
+local test_deps = {"gtest"}
 
-add_requires("pybind11", "gtest", "gmock")
+add_requires("pybind11", "gtest")
 
 -- main C++ library to be used with the Python bindings
 target("aon")
 set_kind("static")
 -- set_targetdir(".")
-add_files("src/aon/*.cpp")
+add_files("src/aon/**/*.cpp")
 -- set_default(false)
 add_packages(table.unpack(lib_deps))
 
@@ -34,6 +35,7 @@ set_prefixname("")
 add_packages(table.unpack(python_lib_deps))
 -- set_default(true)
 add_files("src/pyaon/*.cpp")
+add_files("src/pyaon/**/*.cpp")
 add_deps("aon")
 
 -- test target

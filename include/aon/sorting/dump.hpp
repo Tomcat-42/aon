@@ -6,7 +6,7 @@
 
 #include <vector>
 
-namespace aon {
+namespace aon::sorting {
 /**
  * @brief Dump a vector of values of type T into a file.
  * @param filename The file to dump to

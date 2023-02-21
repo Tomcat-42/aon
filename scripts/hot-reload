@@ -20,4 +20,4 @@ done
 # get the argument target or use default(midirc)
 target=${1:-midirc}
 
-nodemon -e cc,h,js,cpp,hpp --exec "xmake b $target && xmake run --verbose -w . -- $target"
+nodemon -e cc,h,js,cpp,hpp --exec "xmake build && xmake run -w . -- $target"
