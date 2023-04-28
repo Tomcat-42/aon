@@ -9,7 +9,7 @@ namespace aon::hashing {
 
 template <typename T>
 class DataFileLoader {
-    static_assert(std::is_arithmetic_v<T>, "T must be an arithmetic type");
+    static_assert(std::is_arithmetic<T>::value, "T must be an arithmetic type");
 
 public:
     explicit DataFileLoader(const std::string& filename)

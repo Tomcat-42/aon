@@ -10,7 +10,7 @@ namespace aon::hashing {
 
 template <typename T>
 class DataFileDumper {
-    static_assert(std::is_arithmetic_v<T>, "T must be an arithmetic type");
+    static_assert(std::is_arithmetic<T>::value, "T must be an arithmetic type");
 
 public:
     explicit DataFileDumper(const std::string& filename)
