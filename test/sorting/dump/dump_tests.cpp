@@ -53,7 +53,7 @@ protected:
 
   std::string filename = "dump_test.aon";
   std::vector<int> data;
-  std::string assets_dir = "./test/load/assets/";
+  std::string assets_dir = "./test/sorting/load/assets/";
   std::string assets_file = "file_100_unix.aon";
 };
 

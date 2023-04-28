@@ -27,7 +27,7 @@ protected:
   std::string filename_unix;
   std::string filename_dos;
   std::vector<int> data;
-  std::string assets_dir = "./test/load/assets/";
+  std::string assets_dir = "./test/sorting/load/assets/";
 };
 
 TEST_F(load_tests, load_file_100_unix) {
