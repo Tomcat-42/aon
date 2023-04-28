@@ -26,6 +26,8 @@ set_kind("static")
 add_files("src/aon/**/*.cpp")
 -- set_default(false)
 add_packages(table.unpack(lib_deps))
+set_installdir("/usr/local")
+set_targetdir("./daa")
 
 -- python bindings library
 target("pyaon")
@@ -37,6 +39,9 @@ add_packages(table.unpack(python_lib_deps))
 add_files("src/pyaon/*.cpp")
 add_files("src/pyaon/**/*.cpp")
 add_deps("aon")
+set_installdir("/usr/local")
+set_targetdir("./daa")
+
 
 -- test target
 target("aon_test")
@@ -46,6 +51,8 @@ add_ldflags("-lgtest")
 -- set_default(false)
 add_packages(table.unpack(test_deps))
 add_deps("aon")
+set_installdir("/usr/local")
+set_targetdir("./daa")
 
 -- standalone
 target("main")
