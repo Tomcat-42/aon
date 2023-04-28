@@ -39,7 +39,7 @@ add_files("src/pyaon/**/*.cpp")
 add_deps("aon")
 
 -- test target
-target("test")
+target("aon_test")
 set_kind("binary")
 add_files("test/**/*.cpp", "test/main.cpp")
 add_ldflags("-lgtest")
