@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <map>
+#include <set>
 #include <string>
 #include <vector>
 
@@ -8,9 +9,9 @@ namespace aon::graph {
 
 template <typename T>
 auto load(std::string const& filename)
-  -> std::pair<std::size_t, std::map<T, std::vector<std::pair<size_t, T>>>> {
+  -> std::pair<std::size_t, std::map<T, std::set<std::pair<size_t, T>>>> {
   std::size_t size;
-  std::map<T, std::vector<std::pair<size_t, T>>> graph;
+  std::map<T, std::set<std::pair<size_t, T>>> graph;
 
   try {
     std::ifstream file(filename);
@@ -31,12 +32,12 @@ auto load(std::string const& filename)
      * graph[i].
      * */
     for (std::size_t i = 0; i < size; ++i) {
-      std::vector<std::pair<size_t, T>> weights;
+      std::set<std::pair<size_t, T>> weights;
       for (std::size_t j = 0; j < size; ++j) {
         T weight;
         file >> weight;
         if (weight != 0) {
-          weights.emplace_back(j, weight);
+          weights.insert({j, weight});
         }
       }
 
