@@ -5,6 +5,7 @@ usage() {
 	echo -e "Usage: $0 [target]" 1>&2
 	exit 1
 }
+
 command_exists() {
 	if ! command -v """$1" >/dev/null 2>&1; then
 		echo "I require the command ""$1 but it's not installed. Abort."
@@ -13,14 +14,10 @@ command_exists() {
 }
 
 # depts
-for i in "nodemon" "ccache"; do
+for i in "xmake"; do
 	command_exists "$i"
 done
 
-target=${1}
-
-if [ "$target" = "" ]; then
-	usage
-fi
-
+# get the argument target or use default(test)
+target=${1:-test}
 nodemon -e cc,h,js,cpp,hpp --exec "xmake build && xmake run -w . -- $target"

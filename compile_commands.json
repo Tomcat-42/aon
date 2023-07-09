@@ -1,18 +1,43 @@
 [
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.10", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/pyaon.cpp.o", "src/pyaon/pyaon.cpp"],
-  "file": "src/pyaon/pyaon.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/sorting/dump/dump_tests.cpp.o", "test/sorting/dump/dump_tests.cpp"],
+  "file": "test/sorting/dump/dump_tests.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.10", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/sorting/sorting.cpp.o", "src/pyaon/sorting/sorting.cpp"],
-  "file": "src/pyaon/sorting/sorting.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/sorting/load/load_tests.cpp.o", "test/sorting/load/load_tests.cpp"],
+  "file": "test/sorting/load/load_tests.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.10", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/knapsack/knapsack.cpp.o", "src/pyaon/knapsack/knapsack.cpp"],
-  "file": "src/pyaon/knapsack/knapsack.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/graph/dump/dump_tests.cpp.o", "test/graph/dump/dump_tests.cpp"],
+  "file": "test/graph/dump/dump_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/aon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/graph/load/load_tests.cpp.o", "test/graph/load/load_tests.cpp"],
+  "file": "test/graph/load/load_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/aon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/hashing/dump/dump_tests.cpp.o", "test/hashing/dump/dump_tests.cpp"],
+  "file": "test/hashing/dump/dump_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/aon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/hashing/load/load_tests.cpp.o", "test/hashing/load/load_tests.cpp"],
+  "file": "test/hashing/load/load_tests.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/aon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/main.cpp.o", "test/main.cpp"],
+  "file": "test/main.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Unioeste/paa/aon",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
@@ -46,31 +71,21 @@
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/main/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
-  "file": "src/main.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.11", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/pyaon.cpp.o", "src/pyaon/pyaon.cpp"],
+  "file": "src/pyaon/pyaon.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/sorting/dump/dump_tests.cpp.o", "test/sorting/dump/dump_tests.cpp"],
-  "file": "test/sorting/dump/dump_tests.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.11", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/sorting/sorting.cpp.o", "src/pyaon/sorting/sorting.cpp"],
+  "file": "src/pyaon/sorting/sorting.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/sorting/load/load_tests.cpp.o", "test/sorting/load/load_tests.cpp"],
-  "file": "test/sorting/load/load_tests.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.11", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/hashing/hashing.cpp.o", "src/pyaon/hashing/hashing.cpp"],
+  "file": "src/pyaon/hashing/hashing.cpp"
 },
 {
   "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/hashing/dump/dump_tests.cpp.o", "test/hashing/dump/dump_tests.cpp"],
-  "file": "test/hashing/dump/dump_tests.cpp"
-},
-{
-  "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/hashing/load/load_tests.cpp.o", "test/hashing/load/load_tests.cpp"],
-  "file": "test/hashing/load/load_tests.cpp"
-},
-{
-  "directory": "/mnt/files/projects/Unioeste/paa/aon",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/g/gtest/1.12.1/77b9096bc4b34d9282f672d36b015ba9/include", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/aon_test/linux/x86_64/release/test/main.cpp.o", "test/main.cpp"],
-  "file": "test/main.cpp"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-Wall", "-Werror", "-O3", "-std=c++20", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/p/pybind11/v2.10.0/41ef60b323db424f8cf3967e35d79f9e/include", "-I", "/usr/include/python3.11", "-fno-strict-aliasing", "-fPIC", "-fvisibility=hidden", "-fno-trapping-math", "-Ofast", "-DNDEBUG", "-o", "build/.objs/pyaon/linux/x86_64/release/src/pyaon/knapsack/knapsack.cpp.o", "src/pyaon/knapsack/knapsack.cpp"],
+  "file": "src/pyaon/knapsack/knapsack.cpp"
 }]
