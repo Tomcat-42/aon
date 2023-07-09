@@ -28,7 +28,7 @@ protected:
   std::string filename_unix;
   std::string filename_dos;
   std::size_t size;
-  std::map<size_t, std::vector<std::pair<size_t, size_t>>> data;
+  std::map<size_t, std::set<std::pair<size_t, size_t>>> data;
   std::string assets_dir = "./test/graph/load/assets/";
 };
 

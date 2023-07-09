@@ -2,6 +2,8 @@
 #include <cstddef>
 #include <gtest/gtest.h>
 
+#include <map>
+#include <set>
 #include <string>
 #include <vector>
 
@@ -53,7 +55,7 @@ protected:
 
   std::string filename = "dump_test.aon";
   std::size_t size;
-  std::map<std::size_t, std::vector<std::pair<std::size_t, std::size_t>>> data;
+  std::map<std::size_t, std::set<std::pair<std::size_t, std::size_t>>> data;
   std::string assets_dir = "./test/graph/dump/assets/";
   std::string assets_file = "file_10.aon";
 };
