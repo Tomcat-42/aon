@@ -21,7 +21,6 @@ auto load(std::string const& filename)
 
     /* First, read the number of elements from the file. */
     file >> size;
-    std::cout << "[load] size: " << size << std::endl;
 
     /* Then, we will read `size` lines from the file.
      * In each line, we will read `size` elements of type `T` and store
