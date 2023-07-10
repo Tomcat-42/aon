@@ -2,18 +2,17 @@
 
 #include <cstddef>
 #include <fstream>
+#include <map>
 #include <set>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 namespace aon::graph {
 
 template <typename T>
-auto dump(
-  std::string const& filename,
-  std::pair<std::size_t,
-            std::unordered_map<T, std::set<std::pair<size_t, T>>>> const& data)
+auto dump(std::string const& filename,
+          std::pair<std::size_t,
+                    std::map<T, std::set<std::pair<size_t, T>>>> const& data)
   -> void {
   std::ofstream ofs(filename);
   if (!ofs) {

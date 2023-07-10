@@ -2,8 +2,8 @@
 #include <cstddef>
 #include <gtest/gtest.h>
 
+#include <map>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 class graph_load_tests : public ::testing::Test {
@@ -28,7 +28,7 @@ protected:
   std::string filename_unix;
   std::string filename_dos;
   std::size_t size;
-  std::unordered_map<size_t, std::set<std::pair<size_t, size_t>>> data;
+  std::map<size_t, std::set<std::pair<size_t, size_t>>> data;
   std::string assets_dir = "./test/graph/load/assets/";
 };
 

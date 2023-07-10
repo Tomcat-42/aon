@@ -1,18 +1,17 @@
 #include <fstream>
 #include <iostream>
+#include <map>
 #include <set>
 #include <string>
-#include <unordered_map>
 #include <vector>
 
 namespace aon::graph {
 
 template <typename T>
 auto load(std::string const& filename)
-  -> std::pair<std::size_t,
-               std::unordered_map<T, std::set<std::pair<size_t, T>>>> {
+  -> std::pair<std::size_t, std::map<T, std::set<std::pair<size_t, T>>>> {
   std::size_t size;
-  std::unordered_map<T, std::set<std::pair<size_t, T>>> graph;
+  std::map<T, std::set<std::pair<size_t, T>>> graph;
 
   try {
     std::ifstream file(filename);

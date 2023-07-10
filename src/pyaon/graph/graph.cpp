@@ -13,6 +13,6 @@ void graph(py::module_& m) {
     m.def_submodule("hashing", "Parse and dump AON files (graph variant)");
   m_graph.def("load", &aon::graph::load<std::size_t>,
               "Load an AON file (graph variant)");
-  m_graph.def("dump", &aon::graph::dump<int>,
+  m_graph.def("dump", &aon::graph::dump<std::size_t>,
               "Dump an AON file (graph variant)");
 }
