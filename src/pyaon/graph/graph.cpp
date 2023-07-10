@@ -10,7 +10,7 @@ namespace py = pybind11;
 
 void graph(py::module_& m) {
   auto m_graph =
-    m.def_submodule("hashing", "Parse and dump AON files (graph variant)");
+    m.def_submodule("graph", "Parse and dump AON files (graph variant)");
   m_graph.def("load", &aon::graph::load<std::size_t>,
               "Load an AON file (graph variant)");
   m_graph.def("dump", &aon::graph::dump<std::size_t>,
